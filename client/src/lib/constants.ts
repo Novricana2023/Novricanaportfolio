@@ -9,27 +9,41 @@ export const LINKS = {
 } as const;
 
 export const TECH_STACK = {
-  languages: ["JavaScript", "TypeScript", "Python"],
-  web: ["React", "Node.js", "Express", "REST APIs"],
+  languages: ["Python", "JavaScript", "TypeScript", "C#"],
+  webSystems: ["React", "Node.js", "Express", "ASP.NET", "REST APIs"],
   ai: [
+    "AI Models",
     "Machine Learning",
+    "Natural Language Processing",
     "Computer Vision",
     "YOLOv8",
-    "NLP",
     "Streamlit",
     "Hugging Face",
   ],
   platforms: ["Azure", "Vercel"],
 } as const;
 
+export const TECH_STACK_SECTIONS = [
+  { label: "Languages", items: TECH_STACK.languages },
+  { label: "Web & Systems", items: TECH_STACK.webSystems },
+  { label: "AI & ML", items: TECH_STACK.ai },
+  { label: "Cloud & Deploy", items: TECH_STACK.platforms },
+] as const;
+
+export const HERO_SKILL_BADGES = [
+  "Python · JavaScript · Web Systems",
+  "React · Node.js · ASP.NET",
+  "AI Models · NLP · YOLOv8",
+] as const;
+
 export const PROFILE = {
   name: "Novricana Viola Lungu",
   shortName: "Novricana",
-  role: "Full-Stack Developer & AI Engineer",
+  role: "Software Engineer · Full-Stack & AI",
   title:
     "Full-Stack Developer · AI Model Builder · Digital Trainer · Tech-for-Impact Leader",
   summary:
-    "I'm an innovative builder who gets genuinely excited about creating systems that change lives. Full-stack in JavaScript, TypeScript, Python, React, and Node.js. AI from YOLOv8 computer vision to NLP health tools on Streamlit and Hugging Face. Digital trainer at heart. Tech for everyone. AI for us all. I design inclusive platforms for health and accessibility, from Smart Vision AI helping visually impaired users navigate, to Umoyo AI supporting women's PCOS health, to diabetes risk tools that put prevention within reach. I built Maphunziro to bring digital learning to Malawi, where manual education still dominates classrooms. Writer, inspiring tech researcher, and founder of HealingTech Initiative. Still reading? The work below is worth it.",
+    "I'm an innovative builder who gets genuinely excited about creating systems that change lives. I work in Python and JavaScript, ship web systems with React, Node.js, and ASP.NET, and build AI models across natural language processing, computer vision, and YOLOv8. Digital trainer at heart. Tech for everyone. AI for us all. I design inclusive platforms for health and accessibility, from Smart Vision AI helping visually impaired users navigate, to Umoyo AI supporting women's PCOS health, to diabetes risk tools that put prevention within reach. I built Maphunziro to bring digital learning to Malawi, where manual education still dominates classrooms. Writer, inspiring tech researcher, and founder of HealingTech Initiative. Still reading? The work below is worth it.",
 } as const;
 
 export const HEALINGTECH = {

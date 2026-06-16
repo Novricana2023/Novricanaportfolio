@@ -13,6 +13,7 @@ export interface Project {
 export const AI_SLEEP_NOTE =
   "Some AI demos run on free hosting and may sleep when inactive. If a project does not load right away, refresh the page or click Restart. It usually wakes up within a minute.";
 
+/** Add new portfolio projects to this array. */
 export const projects: Project[] = [
   {
     title: "Umoyo AI",

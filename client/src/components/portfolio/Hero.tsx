@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, PenLine, Code2, Brain, GraduationCap } from "lucide-react";
 import CoverBanner from "./CoverBanner";
 import { ASSETS } from "@/lib/assets";
-import { LINKS, PROFILE } from "@/lib/constants";
+import { LINKS, PROFILE, HERO_SKILL_BADGES } from "@/lib/constants";
 
 export default function Hero() {
   return (
@@ -42,18 +42,19 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary">
-                <Code2 className="w-3.5 h-3.5 text-accent" />
-                JavaScript · Python · TypeScript
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary">
-                <Code2 className="w-3.5 h-3.5 text-accent" />
-                React · Node.js · Full-Stack
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary">
-                <Brain className="w-3.5 h-3.5 text-accent" />
-                YOLOv8 · NLP · Streamlit · ML
-              </span>
+              {HERO_SKILL_BADGES.map((label) => (
+                <span
+                  key={label}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary"
+                >
+                  {label.startsWith("AI") ? (
+                    <Brain className="w-3.5 h-3.5 text-accent" />
+                  ) : (
+                    <Code2 className="w-3.5 h-3.5 text-accent" />
+                  )}
+                  {label}
+                </span>
+              ))}
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary">
                 <GraduationCap className="w-3.5 h-3.5 text-accent" />
                 Digital Trainer

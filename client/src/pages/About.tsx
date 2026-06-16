@@ -4,7 +4,8 @@ import Footer from "@/components/portfolio/Footer";
 import CoverBanner from "@/components/portfolio/CoverBanner";
 import { ArrowLeft } from "lucide-react";
 import { useLocation } from "wouter";
-import { LINKS, TECH_STACK } from "@/lib/constants";
+import TechStackGrid from "@/components/portfolio/TechStackGrid";
+import { LINKS, PROFILE } from "@/lib/constants";
 import { ASSETS } from "@/lib/assets";
 
 export default function AboutPage() {
@@ -48,19 +49,17 @@ export default function AboutPage() {
         <section className="py-12 md:py-20">
           <div className="container max-w-4xl">
             <div className="space-y-8 text-lg text-foreground/75 leading-relaxed">
-              <p>
-                I'm a software engineer who builds across JavaScript, Python, React, and Node.js — and trains models for computer vision, NLP, and health. From YOLOv8 accessibility tools to Streamlit and Hugging Face AI apps, I engineer systems for real problems. I'm a writer, an inspiring tech researcher, and a tech-for-impact leader on a mission to bridge the digital gap.
-              </p>
+              <p>{PROFILE.summary}</p>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white border border-blue-100 rounded-2xl p-6">
                   <h3 className="text-xl font-bold text-primary mb-3">What I Build</h3>
                   <ul className="space-y-2 text-foreground/70 text-base">
                     {[
-                      "Python & Streamlit health AI (Umoyo, Diabetes Predictor)",
-                      "YOLOv8 computer vision & NLP tools",
-                      "React & Node.js full-stack platforms",
-                      "EdTech, conservation, and impact web apps",
+                      "Web systems: React, Node.js, ASP.NET, and REST APIs",
+                      "Python AI: NLP, Streamlit, Hugging Face, health tools",
+                      "Computer vision with YOLOv8 and accessibility apps",
+                      "EdTech, conservation, and social-impact platforms",
                     ].map((item) => (
                       <li key={item} className="flex gap-2">
                         <span className="text-accent">→</span>{item}
@@ -82,30 +81,7 @@ export default function AboutPage() {
 
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-primary">Technologies I Work With</h3>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  {(
-                    [
-                      ["Languages", TECH_STACK.languages],
-                      ["Web & Backend", TECH_STACK.web],
-                      ["AI & ML", TECH_STACK.ai],
-                      ["Deployment", TECH_STACK.platforms],
-                    ] as const
-                  ).map(([label, items]) => (
-                    <div key={label} className="bg-white border border-blue-100 rounded-2xl p-5">
-                      <p className="text-sm font-semibold text-accent mb-3">{label}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {items.map((tech) => (
-                          <span
-                            key={tech}
-                            className="px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <TechStackGrid />
               </div>
 
               <div className="bg-gradient-to-r from-orange-50 to-blue-50 border-l-4 border-accent rounded-xl p-8">

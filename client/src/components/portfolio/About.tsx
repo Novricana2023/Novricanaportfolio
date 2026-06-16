@@ -1,5 +1,6 @@
 import SectionHeader from "./SectionHeader";
-import { PROFILE, TECH_STACK } from "@/lib/constants";
+import TechStackGrid from "./TechStackGrid";
+import { PROFILE } from "@/lib/constants";
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
         <SectionHeader
           accent="About Me"
           title="Code That Cares. Systems That Scale."
-          subtitle="Innovative full-stack systems and AI models for health, accessibility, education, and social impact. JavaScript, Python, React, Node.js, and tools built for real-world impact."
+          subtitle="Python, JavaScript, web systems, ASP.NET, and AI models built for health, accessibility, education, and social impact."
         />
 
         <div className="max-w-4xl mx-auto space-y-8">
@@ -21,9 +22,9 @@ export default function About() {
               <h3 className="text-lg font-bold text-primary mb-4">What I Do</h3>
               <ul className="space-y-2.5">
                 {[
-                  "Full-stack apps with JavaScript, TypeScript, React, and Node.js",
-                  "Python AI tools with Streamlit, Hugging Face, and ML pipelines",
-                  "Computer vision (YOLOv8) and NLP models for health and accessibility",
+                  "Web systems in Python, JavaScript, React, Node.js, and ASP.NET",
+                  "AI models: NLP, computer vision, YOLOv8, and health-focused ML",
+                  "Streamlit and Hugging Face apps deployed for real users",
                   "Inclusive platforms for wellness, education, and social impact",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-foreground/70">
@@ -61,33 +62,7 @@ export default function About() {
 
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-primary">Technologies I Work With</h3>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {(
-                [
-                  ["Languages", TECH_STACK.languages],
-                  ["Web & Backend", TECH_STACK.web],
-                  ["AI & ML", TECH_STACK.ai],
-                  ["Deployment", TECH_STACK.platforms],
-                ] as const
-              ).map(([label, items]) => (
-                <div
-                  key={label}
-                  className="bg-white border border-blue-100/80 rounded-2xl p-5 shadow-sm"
-                >
-                  <p className="text-sm font-semibold text-accent mb-3">{label}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {items.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+            <TechStackGrid />
           </div>
 
           <div className="flex flex-wrap gap-2">
