@@ -3,31 +3,29 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 
 const navItems = [
-  { label: "Home", href: "/", hash: "#home" },
-  { label: "About", href: "/about", hash: "#about" },
-  { label: "Projects", href: "/projects", hash: "#projects" },
-  { label: "Leadership", href: "/leadership", hash: "#healingtech" },
-  { label: "Contact", href: "/contact", hash: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Projects", href: "/projects" },
+  { label: "Leadership", href: "/leadership" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [location] = useLocation();
-  const isHome = location === "/";
 
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
-  const handleNavClick = (item: (typeof navItems)[0]) => {
-    setIsOpen(false);
-    if (isHome && item.hash) {
-      const el = document.querySelector(item.hash);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-        return;
-      }
-    }
+  const linkClass = (href: string, mobile = false) => {
+    const active = location === href;
+    const base = mobile
+      ? "block w-full text-left px-4 py-3 text-sm font-medium rounded-lg transition-colors"
+      : "px-4 py-2 text-sm font-medium rounded-full transition-all duration-200";
+    return active
+      ? `${base} text-accent bg-accent/10`
+      : `${base} text-foreground/70 hover:text-accent hover:bg-accent/5`;
   };
 
   return (
@@ -42,29 +40,11 @@ export default function Navigation() {
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
-            {navItems.map((item) =>
-              isHome ? (
-                <button
-                  key={item.label}
-                  onClick={() => handleNavClick(item)}
-                  className="px-4 py-2 text-sm font-medium text-foreground/70 hover:text-accent rounded-full hover:bg-accent/5 transition-all duration-200"
-                >
-                  {item.label}
-                </button>
-              ) : (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 ${
-                    location === item.href
-                      ? "text-accent bg-accent/10"
-                      : "text-foreground/70 hover:text-accent hover:bg-accent/5"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
+            {navItems.map((item) => (
+              <Link key={item.label} href={item.href} className={linkClass(item.href)}>
+                {item.label}
+              </Link>
+            ))}
           </div>
 
           <button
@@ -82,25 +62,11 @@ export default function Navigation() {
 
         {isOpen && (
           <div className="md:hidden mt-3 pb-3 space-y-1 border-t border-blue-50 pt-3 animate-in fade-in slide-in-from-top-2 duration-200">
-            {navItems.map((item) =>
-              isHome ? (
-                <button
-                  key={item.label}
-                  onClick={() => handleNavClick(item)}
-                  className="block w-full text-left px-4 py-3 text-sm font-medium text-foreground/70 hover:text-accent hover:bg-accent/5 rounded-lg transition-colors"
-                >
-                  {item.label}
-                </button>
-              ) : (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="block w-full text-left px-4 py-3 text-sm font-medium text-foreground/70 hover:text-accent hover:bg-accent/5 rounded-lg transition-colors"
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
+            {navItems.map((item) => (
+              <Link key={item.label} href={item.href} className={linkClass(item.href, true)}>
+                {item.label}
+              </Link>
+            ))}
           </div>
         )}
       </div>

@@ -6,11 +6,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { label: "About", hash: "#about" },
-    { label: "Projects", hash: "#projects" },
-    { label: "HealingTech", hash: "#healingtech" },
-    { label: "Recognition", hash: "#recognition" },
-    { label: "Contact", hash: "#contact" },
+    { label: "About", href: "/about" },
+    { label: "Projects", href: "/projects" },
+    { label: "Leadership", href: "/leadership" },
+    { label: "Recognition", href: "/#recognition" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -42,18 +42,15 @@ export default function Footer() {
             <h3 className="font-bold text-primary">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               {quickLinks.map((link) => (
-                <li key={link.hash}>
-                  <a
-                    href={link.hash}
-                    className="text-foreground/70 hover:text-accent transition-colors"
-                  >
+                <li key={link.href}>
+                  <Link href={link.href} className="text-foreground/70 hover:text-accent transition-colors">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li>
-                <Link href="/about" className="text-foreground/70 hover:text-accent transition-colors">
-                  Full About Page →
+                <Link href="/" className="text-foreground/70 hover:text-accent transition-colors">
+                  Full Home Page →
                 </Link>
               </li>
             </ul>
