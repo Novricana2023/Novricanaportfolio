@@ -79,18 +79,6 @@ export const projects: Project[] = [
     isAiHosted: true,
   },
   {
-    title: "Maphunziro ERP",
-    category: "EdTech, Malawi",
-    description:
-      "A learning platform built for Malawi's education landscape, where manual learning still dominates. Maphunziro brings classrooms online and gives students and institutions digital tools to learn, teach, and grow.",
-    impact: "Digital education for Malawi's next generation",
-    link: "https://maphunziroblackboardweb20260521160347-e8fed0dpgyfac9eu.southafricanorth-01.azurewebsites.net",
-    tags: ["EdTech", "Malawi", "LMS", "Social Impact"],
-    featured: false,
-    image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop&q=80",
-  },
-  {
     title: "Bridal Soiree",
     category: "E-Commerce, Web",
     description:
