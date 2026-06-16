@@ -46,19 +46,33 @@ This repo includes a [`render.yaml`](render.yaml) Blueprint. No extra env vars a
 
 1. Push this repo to GitHub
 2. Go to [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**
-3. Connect the GitHub repo
-4. Render reads `render.yaml` and deploys automatically
+3. Connect the GitHub repo **Novricanaportfolio**
+4. Render reads `render.yaml` and deploys as a **Static Site**
 
-### Option B: Manual Web Service
+### Option B: Manual Static Site
+
+If you already created a Static Site on Render, set these in **Settings**:
+
+| Setting | Value |
+|---------|-------|
+| **Build command** | `npm install -g pnpm@10.4.1 && pnpm install --frozen-lockfile && pnpm run build:static` |
+| **Publish directory** | `dist/public` |
+| **Node version** | 22.13.0 |
+
+Add a rewrite rule so routes like `/about` work: **Redirects/Rewrites** → `/*` → `/index.html` (Rewrite).
+
+### Option C: Manual Web Service (Node + Express)
 
 1. **New Web Service** → connect GitHub repo
 2. **Runtime:** Node
 3. **Build command:** `npm install -g pnpm@10.4.1 && pnpm install --frozen-lockfile && pnpm build`
 4. **Start command:** `pnpm start`
 5. **Node version:** 22.13.0
-6. Deploy
+6. Do **not** set a publish directory (that is for Static Sites only)
 
-Render sets `PORT` automatically. The Express server binds to `0.0.0.0` and serves the built app from `dist/public/`.
+### Troubleshooting
+
+**`Publish directory dist/public does not exist`** — the build step did not run. Your build command must include `pnpm run build:static` (Static Site) or `pnpm build` (Web Service), not just `pnpm install`.
 
 ## Project scripts
 
@@ -66,6 +80,7 @@ Render sets `PORT` automatically. The Express server binds to `0.0.0.0` and serv
 |---------|-------------|
 | `pnpm dev` | Vite dev server |
 | `pnpm build` | Build frontend + server |
+| `pnpm build:static` | Build frontend only (Render Static Site) |
 | `pnpm start` | Run production server |
 | `pnpm check` | TypeScript check |
 
