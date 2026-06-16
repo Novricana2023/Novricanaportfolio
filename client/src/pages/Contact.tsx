@@ -65,7 +65,7 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-xl text-foreground/70 max-w-2xl">
-              I'm always interested in discussing AI innovation, technology for social good, research opportunities, and collaborations that create meaningful impact.
+              I'm always interested in AI innovation, technology for social good, research collaborations, and meaningful volunteering opportunities that create real community impact.
             </p>
           </div>
         </section>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   Ready to Collaborate?
                 </h3>
                 <p className="text-lg text-foreground/70 mb-6 leading-relaxed">
-                  Whether you have a project idea, research opportunity, speaking engagement, or just want to discuss technology and social impact, I'd love to hear from you.
+                  Whether you have a project idea, research opportunity, speaking engagement, or want to volunteer with HealingTech and community programs — I'd love to hear from you.
                 </p>
                 <a
                   href={LINKS.healingTech}
@@ -166,6 +166,10 @@ export default function ContactPage() {
                   <li className="flex items-start gap-3">
                     <span className="text-accent font-bold mt-1">→</span>
                     <span>Speaking engagements on AI governance and digital inclusion</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent font-bold mt-1">→</span>
+                    <span>Meaningful volunteering with HealingTech and community programs</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent font-bold mt-1">→</span>

@@ -42,7 +42,7 @@ export default function LeadershipPage() {
                 Leadership & Community Impact
               </h1>
               <p className="text-foreground/70 max-w-xl">
-                Building communities through technology, mentorship, and digital inclusion.
+                Founder of HealingTech Initiative — digital training, mentorship, and inclusion for underserved communities.
               </p>
             </div>
           </div>
@@ -51,7 +51,10 @@ export default function LeadershipPage() {
         <section className="py-8 md:py-12">
           <div className="container">
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">{HEALINGTECH.name}</h2>
-            <p className="text-lg font-semibold text-accent mb-6">{HEALINGTECH.tagline}</p>
+            <p className="text-lg font-semibold text-accent mb-4">{HEALINGTECH.tagline}</p>
+            <p className="text-base md:text-lg font-medium text-primary/80 leading-relaxed max-w-3xl mb-6">
+              {HEALINGTECH.founderLine}
+            </p>
 
             <p className="text-foreground/70 leading-relaxed max-w-3xl mb-8">
               {HEALINGTECH.description}
@@ -155,6 +158,18 @@ export default function LeadershipPage() {
               <PortfolioImage src={ASSETS.digitalTraining.three} alt="Coding workshop" aspect="square" />
               <PortfolioImage src={ASSETS.digitalTraining.four} alt="Tech education" aspect="square" />
             </div>
+          </div>
+        </section>
+        <section className="py-12 md:py-20 bg-gradient-to-b from-blue-50/30 to-white">
+          <div className="container max-w-3xl">
+            <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+              <Heart className="w-6 h-6 text-accent" />
+              Volunteering & Community Support
+            </h3>
+            <p className="text-foreground/70 leading-relaxed mb-6">{HEALINGTECH.volunteering}</p>
+            <Button asChild className="bg-accent hover:bg-accent/90 text-white rounded-full">
+              <a href={LINKS.email}>Reach Out to Volunteer</a>
+            </Button>
           </div>
         </section>
       </main>

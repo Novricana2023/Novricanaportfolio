@@ -11,9 +11,9 @@ export default function HealingTech() {
     <section id="healingtech" className="py-16 md:py-24 bg-gradient-to-b from-blue-50/30 to-white scroll-mt-24">
       <div className="container">
         <SectionHeader
-          accent="Social Impact"
+          accent="Social Impact · Founded by Novricana"
           title={HEALINGTECH.name}
-          subtitle={HEALINGTECH.tagline}
+          subtitle={HEALINGTECH.founderLine}
         />
 
         <div className="max-w-3xl mb-10">
@@ -29,6 +29,14 @@ export default function HealingTech() {
               <ExternalLink className="w-4 h-4 mr-2" />
               Follow HealingTech on LinkedIn
             </a>
+          </Button>
+        </div>
+
+        <div className="max-w-3xl mb-10 md:mb-14 bg-gradient-to-r from-orange-50/80 to-blue-50/80 border border-accent/15 rounded-2xl p-6 md:p-8">
+          <h3 className="text-lg font-bold text-primary mb-3">Volunteering & Community Support</h3>
+          <p className="text-foreground/70 leading-relaxed mb-4">{HEALINGTECH.volunteering}</p>
+          <Button asChild className="bg-accent hover:bg-accent/90 text-white rounded-full">
+            <a href={LINKS.email}>Get Involved</a>
           </Button>
         </div>
 

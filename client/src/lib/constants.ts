@@ -43,16 +43,20 @@ export const PROFILE = {
   title:
     "Full-Stack Developer · AI Model Builder · Digital Trainer · Tech-for-Impact Leader",
   summary:
-    "I'm an innovative builder who gets genuinely excited about creating systems that change lives. I work in Python and JavaScript, ship web systems with React, Node.js, and ASP.NET, and build AI models across natural language processing, computer vision, and YOLOv8. Digital trainer at heart. Tech for everyone. AI for us all. I design inclusive platforms for health and accessibility, from Smart Vision AI helping visually impaired users navigate, to Umoyo AI supporting women's PCOS health, to diabetes risk tools that put prevention within reach. I built Maphunziro to bring digital learning to Malawi, where manual education still dominates classrooms. Writer, inspiring tech researcher, and founder of HealingTech Initiative. Still reading? The work below is worth it.",
+    "I'm an innovative builder who gets genuinely excited about creating systems that change lives. I work in Python and JavaScript, ship web systems with React, Node.js, and ASP.NET, and build AI models across natural language processing, computer vision, and YOLOv8. Digital trainer at heart. Tech for everyone. AI for us all. I founded HealingTech Initiative, which supports youth and children in underserved communities through digital training, accessible technology, capacity building, and mental health and wellbeing programs. That leadership work matters to me as much as anything I build. Umoyo AI, which gives women accessible PCOS health support and guidance; and Smart Vision AI, which helps visually impaired users identify objects and navigate with confidence. Writer, inspiring tech researcher, and genuinely glad for meaningful volunteering opportunities that create real community impact. Still reading? The work below is worth it.",
 } as const;
 
 export const HEALINGTECH = {
   name: "HealingTech Initiative",
   tagline: "Technology. Inclusion. Empowerment.",
+  founderLine:
+    "An initiative I founded to support youth and children in underserved communities through digital training, accessible technology, capacity building, and mental health and wellbeing programs.",
   short:
     "An initiative I founded supporting youth and children from underserved communities through digital training, accessible technology, capacity building, and mental health and wellbeing programs.",
   description:
-    "HealingTech Initiative is my social impact platform reaching youth and children in underserved communities. We deliver digital training and coding programs, build accessible technology pathways, run capacity-building workshops, and support mental health and wellbeing. Because bridging the digital gap means caring for the whole person, not just the screen.",
+    "HealingTech Initiative reaches youth and children in underserved communities. We deliver digital training and coding programs, build accessible technology pathways, run capacity-building workshops, and support mental health and wellbeing. Because bridging the digital gap means caring for the whole person, not just the screen.",
   digitalTraining:
     "As a digital trainer, I design and deliver AI workshops, coding bootcamps, and digital literacy sessions across East Africa and Malawi. I help learners go from curious to confident, building skills that open real doors in tech and beyond.",
+  volunteering:
+    "I'm genuinely glad for meaningful volunteering opportunities — through HealingTech and community programs alike. Mentorship, digital training support, workshop facilitation, wellness program help, and tech-for-good collaborations are all welcome. If you want to give time where it counts, I'd love to hear from you.",
 } as const;

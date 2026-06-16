@@ -18,7 +18,7 @@ export default function Contact() {
         <SectionHeader
           accent="Connect"
           title="Let's Build Something Impactful"
-          subtitle="Open to AI research collaborations, tech-for-good partnerships, speaking engagements, and mentorship opportunities."
+          subtitle="Open to AI collaborations, tech-for-good partnerships, speaking engagements, mentorship, and meaningful volunteering with HealingTech and community programs."
           centered
         />
 
@@ -45,7 +45,7 @@ export default function Contact() {
         <div className="bg-white border border-accent/10 rounded-2xl p-6 md:p-10 text-center shadow-sm">
           <h3 className="text-xl font-bold text-primary mb-3">Ready to Collaborate?</h3>
           <p className="text-foreground/70 mb-6 max-w-lg mx-auto">
-            Whether it's an AI project, research opportunity, or social impact initiative — I'd love to hear from you.
+            Whether it's an AI project, research opportunity, social impact initiative, or volunteering with HealingTech — I'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild className="bg-accent hover:bg-accent/90 text-white rounded-full">
