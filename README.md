@@ -72,7 +72,14 @@ Add a rewrite rule so routes like `/about` work: **Redirects/Rewrites** → `/*`
 
 ### Troubleshooting
 
-**`Publish directory dist/public does not exist`** — the build step did not run. Your build command must include `pnpm run build:static` (Static Site) or `pnpm build` (Web Service), not just `pnpm install`.
+**`Publish directory dist/public does not exist`** — the build step did not run. Fix either:
+
+1. **Update Build command** in Render Settings to:
+   `npm install -g pnpm@10.4.1 && pnpm install --frozen-lockfile && pnpm run build:static`
+
+2. Or **redeploy latest commit** — this repo includes a `postinstall` hook that auto-builds on Render when only `pnpm install` runs.
+
+**Still failing?** In Render → your Static Site → **Settings** → confirm **Publish directory** is exactly `dist/public` (not `./dist` or `client/dist`).
 
 ## Project scripts
 
