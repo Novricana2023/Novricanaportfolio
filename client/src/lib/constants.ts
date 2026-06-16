@@ -8,6 +8,20 @@ export const LINKS = {
   phone: "tel:+254790355947",
 } as const;
 
+export const TECH_STACK = {
+  languages: ["JavaScript", "TypeScript", "Python"],
+  web: ["React", "Node.js", "Express", "REST APIs"],
+  ai: [
+    "Machine Learning",
+    "Computer Vision",
+    "YOLOv8",
+    "NLP",
+    "Streamlit",
+    "Hugging Face",
+  ],
+  platforms: ["Azure", "Vercel"],
+} as const;
+
 export const PROFILE = {
   name: "Novricana Viola Lungu",
   shortName: "Novricana",
@@ -15,7 +29,7 @@ export const PROFILE = {
   title:
     "Full-Stack Developer · AI Model Builder · Digital Trainer · Tech-for-Impact Leader",
   summary:
-    "I'm an innovative builder who gets genuinely excited about creating systems that change lives. Full-stack with React and Node.js, AI models trained for real impact, and a digital trainer at heart. Tech for everyone. AI for us all. I design inclusive platforms for health and accessibility, from Smart Vision AI helping visually impaired users navigate, to Umoyo AI supporting women's PCOS health, to diabetes risk tools that put prevention within reach. I built Maphunziro to bring digital learning to Malawi, where manual education still dominates classrooms. Writer, inspiring tech researcher, and founder of HealingTech Initiative. Still reading? The work below is worth it.",
+    "I'm an innovative builder who gets genuinely excited about creating systems that change lives. Full-stack in JavaScript, TypeScript, Python, React, and Node.js. AI from YOLOv8 computer vision to NLP health tools on Streamlit and Hugging Face. Digital trainer at heart. Tech for everyone. AI for us all. I design inclusive platforms for health and accessibility, from Smart Vision AI helping visually impaired users navigate, to Umoyo AI supporting women's PCOS health, to diabetes risk tools that put prevention within reach. I built Maphunziro to bring digital learning to Malawi, where manual education still dominates classrooms. Writer, inspiring tech researcher, and founder of HealingTech Initiative. Still reading? The work below is worth it.",
 } as const;
 
 export const HEALINGTECH = {

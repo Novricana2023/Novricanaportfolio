@@ -4,7 +4,7 @@ import Footer from "@/components/portfolio/Footer";
 import CoverBanner from "@/components/portfolio/CoverBanner";
 import { ArrowLeft } from "lucide-react";
 import { useLocation } from "wouter";
-import { LINKS } from "@/lib/constants";
+import { LINKS, TECH_STACK } from "@/lib/constants";
 import { ASSETS } from "@/lib/assets";
 
 export default function AboutPage() {
@@ -49,14 +49,19 @@ export default function AboutPage() {
           <div className="container max-w-4xl">
             <div className="space-y-8 text-lg text-foreground/75 leading-relaxed">
               <p>
-                I'm a software engineer who builds systems and trains models — computer vision, NLP, full-stack platforms, AI tools engineered for real problems. I'm a writer, an inspiring tech researcher, and a tech-for-impact leader on a mission to bridge the digital gap.
+                I'm a software engineer who builds across JavaScript, Python, React, and Node.js — and trains models for computer vision, NLP, and health. From YOLOv8 accessibility tools to Streamlit and Hugging Face AI apps, I engineer systems for real problems. I'm a writer, an inspiring tech researcher, and a tech-for-impact leader on a mission to bridge the digital gap.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white border border-blue-100 rounded-2xl p-6">
                   <h3 className="text-xl font-bold text-primary mb-3">What I Build</h3>
                   <ul className="space-y-2 text-foreground/70 text-base">
-                    {["AI & machine learning systems", "Full-stack web applications", "Accessible health & education tools", "Conservation & impact platforms"].map((item) => (
+                    {[
+                      "Python & Streamlit health AI (Umoyo, Diabetes Predictor)",
+                      "YOLOv8 computer vision & NLP tools",
+                      "React & Node.js full-stack platforms",
+                      "EdTech, conservation, and impact web apps",
+                    ].map((item) => (
                       <li key={item} className="flex gap-2">
                         <span className="text-accent">→</span>{item}
                       </li>
@@ -72,6 +77,34 @@ export default function AboutPage() {
                       </li>
                     ))}
                   </ul>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-primary">Technologies I Work With</h3>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {(
+                    [
+                      ["Languages", TECH_STACK.languages],
+                      ["Web & Backend", TECH_STACK.web],
+                      ["AI & ML", TECH_STACK.ai],
+                      ["Deployment", TECH_STACK.platforms],
+                    ] as const
+                  ).map(([label, items]) => (
+                    <div key={label} className="bg-white border border-blue-100 rounded-2xl p-5">
+                      <p className="text-sm font-semibold text-accent mb-3">{label}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {items.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
 

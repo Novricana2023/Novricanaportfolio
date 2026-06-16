@@ -44,11 +44,15 @@ export default function Hero() {
             <div className="flex flex-wrap justify-center lg:justify-start gap-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary">
                 <Code2 className="w-3.5 h-3.5 text-accent" />
+                JavaScript · Python · TypeScript
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary">
+                <Code2 className="w-3.5 h-3.5 text-accent" />
                 React · Node.js · Full-Stack
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary">
                 <Brain className="w-3.5 h-3.5 text-accent" />
-                AI Model Building
+                YOLOv8 · NLP · Streamlit · ML
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 border border-blue-100 rounded-full text-xs font-medium text-primary">
                 <GraduationCap className="w-3.5 h-3.5 text-accent" />

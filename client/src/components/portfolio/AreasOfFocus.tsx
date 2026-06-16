@@ -2,8 +2,8 @@ import { Brain, Code, Eye, Scale, Users, Zap, BookOpen, Heart } from "lucide-rea
 import SectionHeader from "./SectionHeader";
 
 const areas = [
-  { icon: Brain, title: "Artificial Intelligence", description: "Model development, NLP, and computer vision" },
-  { icon: Code, title: "Software Engineering", description: "Full-stack web apps and digital platforms" },
+  { icon: Brain, title: "Artificial Intelligence", description: "ML, YOLOv8, NLP, Streamlit, and Hugging Face" },
+  { icon: Code, title: "Software Engineering", description: "JavaScript, Python, React, Node.js, and REST APIs" },
   { icon: Eye, title: "Accessibility Tech", description: "Solutions for underserved communities" },
   { icon: Scale, title: "AI Governance", description: "Ethical AI and responsible innovation" },
   { icon: Users, title: "Digital Inclusion", description: "Bridging the digital divide in Africa" },
