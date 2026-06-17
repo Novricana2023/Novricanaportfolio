@@ -43,7 +43,7 @@ export const PROFILE = {
   title:
     "Full-Stack Developer · AI Model Builder · Writer · HealingTech Founder",
   summary:
-    "I'm an innovative builder who gets genuinely excited about creating systems that change lives. Full-stack in Python and JavaScript, shipping web systems with React, Node.js, and ASP.NET, and building AI models across natural language processing, computer vision, and applied machine learning. Writer and digital trainer at heart. Tech for everyone. AI for us all. I founded HealingTech Initiative, supporting youth and children in underserved communities through digital training, accessible technology, capacity building, and mental health and wellbeing programs. That leadership work matters to me as much as anything I build. I focus on tech-for-impact projects in health, agriculture, climate, accessibility, and education, because innovation should reach the people who need it most. Inspiring tech researcher, and genuinely glad for meaningful volunteering opportunities that create real community impact. Still reading? The work below is worth it.",
+    "I'm an innovative builder excited about systems that change lives. Full-stack in Python and JavaScript, AI model builder across NLP and computer vision, writer, and digital trainer. Tech for everyone. AI for us all. I founded HealingTech Initiative, supporting youth in underserved communities through digital training, accessible technology, and mental health and wellbeing programs. I build for impact in health, agriculture, climate, accessibility, and education, and welcome meaningful volunteering. Still reading? The work below is worth it.",
 } as const;
 
 export const HEALINGTECH = {
