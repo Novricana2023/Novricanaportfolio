@@ -39,11 +39,11 @@ export const HERO_SKILL_BADGES = [
 export const PROFILE = {
   name: "Novricana Viola Lungu",
   shortName: "Novricana",
-  role: "Innovator · Full-Stack Developer · Tech-for-Impact Leader",
+  role: "Innovator · Full-Stack Developer · Writer · Tech-for-Impact Leader",
   title:
-    "Full-Stack Developer · AI Model Builder · HealingTech Founder · Digital Trainer",
+    "Full-Stack Developer · AI Model Builder · Writer · HealingTech Founder",
   summary:
-    "I'm an innovative leader and full-stack developer who builds AI models and web systems for real-world impact. Python, JavaScript, React, and Node.js on the engineering side; natural language processing, computer vision, and applied machine learning where communities need them most. I founded HealingTech Initiative to support youth and children in underserved communities through digital training, accessible technology, capacity building, and mental health and wellbeing programs. My work focuses on tech for impact across health, agriculture, climate, and accessibility, because innovation should change lives, not just look good on a screen. Tech for everyone. AI for us all. Writer, inspiring tech researcher, digital trainer, and genuinely glad for meaningful volunteering opportunities. The projects below show what that commitment looks like in practice.",
+    "I'm an innovative builder who gets genuinely excited about creating systems that change lives. Full-stack in Python and JavaScript, shipping web systems with React, Node.js, and ASP.NET, and building AI models across natural language processing, computer vision, and applied machine learning. Writer and digital trainer at heart. Tech for everyone. AI for us all. I founded HealingTech Initiative, supporting youth and children in underserved communities through digital training, accessible technology, capacity building, and mental health and wellbeing programs. That leadership work matters to me as much as anything I build. I focus on tech-for-impact projects in health, agriculture, climate, accessibility, and education, because innovation should reach the people who need it most. Inspiring tech researcher, and genuinely glad for meaningful volunteering opportunities that create real community impact. Still reading? The work below is worth it.",
 } as const;
 
 export const HEALINGTECH = {
