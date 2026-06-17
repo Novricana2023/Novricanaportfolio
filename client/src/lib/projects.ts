@@ -82,7 +82,7 @@ export const projects: Project[] = [
     title: "Malawi Tobacco AI",
     category: "AI Agriculture, Malawi",
     description:
-      "Bilingual (English/Chichewa) smart assistant for Malawi's smallholder tobacco farmers: early disease support, soil and weather guidance, and practical tools to reduce crop loss and improve yields.",
+      "Bilingual (English/Chichewa) smart assistant for Malawi's smallholder tobacco farmers: early disease detection and support, soil and weather guidance, and practical tools to reduce crop loss and improve yields.",
     impact: "Smarter farming support for Malawi's smallholder growers",
     link: "https://malawi-tobacco-ai-hzujlskfcztgypnxxxnvrq.streamlit.app/",
     tags: ["AI", "Agriculture", "Malawi", "Streamlit", "NLP"],
