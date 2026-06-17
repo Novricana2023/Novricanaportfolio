@@ -1,7 +1,6 @@
 import Navigation from "@/components/portfolio/Navigation";
 import Hero from "@/components/portfolio/Hero";
 import AreasOfFocus from "@/components/portfolio/AreasOfFocus";
-import About from "@/components/portfolio/About";
 import Projects from "@/components/portfolio/Projects";
 import HealingTech from "@/components/portfolio/HealingTech";
 import ResearchInnovation from "@/components/portfolio/ResearchInnovation";
@@ -21,7 +20,6 @@ export default function Home() {
       <main className="pt-16 md:pt-20">
         <Hero />
         <AreasOfFocus />
-        <About />
         <Projects />
         <HealingTech />
         <ResearchInnovation />

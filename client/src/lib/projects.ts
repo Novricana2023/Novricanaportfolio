@@ -79,14 +79,16 @@ export const projects: Project[] = [
     isAiHosted: true,
   },
   {
-    title: "Bridal Soiree",
-    category: "E-Commerce, Web",
+    title: "Malawi Tobacco AI",
+    category: "AI Agriculture, Malawi",
     description:
-      "A modern event and bridal services web app improving digital engagement, online visibility, and customer experience for small businesses.",
-    impact: "Business digitization and digital presence",
-    link: "https://bridal-soiree-git-main-novricana-s-projects.vercel.app/",
-    tags: ["Web", "E-Commerce", "React"],
+      "Bilingual (English/Chichewa) smart assistant for Malawi's smallholder tobacco farmers: early disease support, soil and weather guidance, and practical tools to reduce crop loss and improve yields.",
+    impact: "Smarter farming support for Malawi's smallholder growers",
+    link: "https://malawi-tobacco-ai-hzujlskfcztgypnxxxnvrq.streamlit.app/",
+    tags: ["AI", "Agriculture", "Malawi", "Streamlit", "NLP"],
     featured: false,
-    image: "/images/projects/bridal-soiree.jpg",
+    image:
+      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=500&fit=crop&q=80",
+    isAiHosted: true,
   },
 ];
