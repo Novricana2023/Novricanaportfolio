@@ -41,17 +41,16 @@ export const projects: Project[] = [
     isAiHosted: true,
   },
   {
-    title: "Resume Optimizer AI",
-    category: "NLP, Career Tech",
+    title: "Dela Langa",
+    category: "Community Development Management System",
     description:
-      "An NLP tool that evaluates resumes and delivers intelligent recommendations to improve employability. Helping job seekers present their skills with clarity and confidence.",
-    impact: "Workforce readiness and career empowerment",
-    link: "https://huggingface.co/spaces/Novricana25/AIResumeOptimiser",
-    tags: ["NLP", "Career Tech", "AI", "Hugging Face"],
+      "A full-stack digital governance platform I built for developing nations, strengthening citizen participation and district-level government accountability. Citizens report community issues like road damage, water shortages, flooding, and infrastructure failures, while the District Commissioner's Office manages, prioritizes, and resolves them through an analytics dashboard with real-time tracking, email alerts, public transparency, smart urgency detection, map hotspots, and a full audit trail. Built with Next.js, FastAPI, and PostgreSQL, it gives communities in places like Malawi a trusted way to engage government and turn citizen voices into faster, measurable local development outcomes.",
+    impact: "Digital governance and accountable community development",
+    link: "https://dela-langa-web.onrender.com/",
+    tags: ["Next.js", "FastAPI", "PostgreSQL", "Governance", "Malawi"],
     featured: false,
     image:
-      "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=500&fit=crop&q=80",
-    isAiHosted: true,
+      "https://images.unsplash.com/photo-1529107386315-e1a2cc4882c5?w=800&h=500&fit=crop&q=80",
   },
   {
     title: "Ifadhi Wildlife Monitoring",
