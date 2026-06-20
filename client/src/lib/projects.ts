@@ -49,8 +49,7 @@ export const projects: Project[] = [
     link: "https://dela-langa-web.onrender.com/",
     tags: ["Next.js", "FastAPI", "PostgreSQL", "Governance", "Malawi"],
     featured: false,
-    image:
-      "https://images.unsplash.com/photo-1529107386315-e1a2cc4882c5?w=800&h=500&fit=crop&q=80",
+    image: "/images/projects/dela-langa.jpg",
   },
   {
     title: "Ifadhi Wildlife Monitoring",

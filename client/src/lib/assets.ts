@@ -25,6 +25,7 @@ export const ASSETS = {
   projects: {
     bridalSoiree: "/images/projects/bridal-soiree.jpg",
     smartVisionAi: "/images/projects/smart-vision-ai.jpg",
+    delaLanga: "/images/projects/dela-langa.jpg",
   },
 } as const;
 
