@@ -39,9 +39,8 @@ export const HERO_SKILL_BADGES = [
 export const PROFILE = {
   name: "Novricana Viola Lungu",
   shortName: "Novricana",
-  role: "Innovator · Full-Stack Developer · Writer · Tech-for-Impact Leader",
-  title:
-    "Full-Stack Developer · AI Model Builder · Writer · HealingTech Founder",
+  tagline:
+    "Full-Stack Developer · AI Model Builder · HealingTech Founder · Writer · Tech-for-Impact Leader",
   summary:
     "I'm an innovative builder excited about systems that change lives. Full-stack in Python and JavaScript, AI model builder across NLP and computer vision, writer, and digital trainer. Tech for everyone. AI for us all. I founded HealingTech Initiative, supporting youth in underserved communities through digital training, accessible technology, and mental health and wellbeing programs. I build for impact in health, agriculture, climate, accessibility, and education, and welcome meaningful volunteering. Still reading? The work below is worth it.",
 } as const;

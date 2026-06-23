@@ -25,15 +25,12 @@ export default function Hero() {
           </div>
 
           <div className="space-y-5 text-center lg:text-left lg:pt-8">
-            <div className="space-y-2">
-              <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">
-                {PROFILE.role}
-              </p>
+            <div className="space-y-3">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-primary leading-tight">
                 {PROFILE.name}
               </h1>
-              <p className="text-sm sm:text-base md:text-lg font-medium text-foreground/80 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                {PROFILE.title}
+              <p className="text-sm sm:text-base md:text-lg font-semibold text-accent leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                {PROFILE.tagline}
               </p>
             </div>
 
